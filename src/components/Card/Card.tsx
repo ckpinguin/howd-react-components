@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { ComponentProps } from "react"
 
-import styles from './Card.module.css';
+import styles from "./Card.module.css"
 
-export interface CardProps {}
-
-function Card({}: CardProps) {
-  return <div className={styles.wrapper}></div>;
+export interface CardProps extends ComponentProps<"article"> {
+  textColor: string
+  backgroundColor: string
 }
 
-export default Card;
+function Card({ textColor, backgroundColor, children }: CardProps) {
+  return <article className={styles.wrapper}>{children}</article>
+}
+
+export default Card

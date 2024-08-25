@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { ComponentProps } from "react"
 
-import styles from './Button.module.css';
+import styles from "./Button.module.css"
 
-export interface ButtonProps {}
-
-function Button({}: ButtonProps) {
-  return <div className={styles.wrapper}></div>;
+export interface ButtonProps extends ComponentProps<"button"> {
+  variant?: "filled" | "outline"
 }
 
-export default Button;
+function Button({ variant = "filled", children }: ButtonProps) {
+  return <button className={styles.wrapper}>{children}</button>
+}
+
+export default Button
