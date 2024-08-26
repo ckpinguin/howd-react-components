@@ -21,8 +21,6 @@ function Card({
       style={{
         backgroundColor: backgroundColor,
         color: textColor,
-        padding: "16px",
-        borderRadius: "16px",
       }}
       {...rest}>
       {children}
