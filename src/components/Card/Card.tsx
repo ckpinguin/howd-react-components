@@ -16,7 +16,15 @@ function Card({
   ...rest
 }: CardProps) {
   return (
-    <article className={clsx(styles.wrapper, className)} {...rest}>
+    <article
+      className={clsx(styles.wrapper, className)}
+      style={{
+        backgroundColor: backgroundColor,
+        color: textColor,
+        padding: "16px",
+        borderRadius: "16px",
+      }}
+      {...rest}>
       {children}
     </article>
   )
