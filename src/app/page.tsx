@@ -8,7 +8,8 @@ export default function Home() {
     <main>
       <Card textColor="#000000;" backgroundColor="#c8c6c6">
         <p>
-          This is just a test. A rather short one by the way.
+          This is just a test. A rather short one by the way. And now with a bit
+          more text, that should brake the lines.
         </p>
       </Card>
     </main>

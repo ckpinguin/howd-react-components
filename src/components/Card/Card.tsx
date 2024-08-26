@@ -10,6 +10,7 @@ export interface CardProps extends ComponentProps<"article"> {
 
 function Card({
   textColor,
+  style,
   backgroundColor,
   children,
   className,
@@ -19,7 +20,8 @@ function Card({
     <article
       className={clsx(styles.wrapper, className)}
       style={{
-        backgroundColor: backgroundColor,
+        ...style,
+        backgroundColor,
         color: textColor,
       }}
       {...rest}>
