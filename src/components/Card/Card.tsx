@@ -1,3 +1,4 @@
+import clsx from "clsx/lite"
 import React, { ComponentProps } from "react"
 
 import styles from "./Card.module.css"
@@ -7,8 +8,18 @@ export interface CardProps extends ComponentProps<"article"> {
   backgroundColor: string
 }
 
-function Card({ textColor, backgroundColor, children }: CardProps) {
-  return <article className={styles.wrapper}>{children}</article>
+function Card({
+  textColor,
+  backgroundColor,
+  children,
+  className,
+  ...rest
+}: CardProps) {
+  return (
+    <article className={clsx(styles.wrapper, className)} {...rest}>
+      {children}
+    </article>
+  )
 }
 
 export default Card
