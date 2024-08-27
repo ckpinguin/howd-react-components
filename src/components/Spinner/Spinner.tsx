@@ -12,7 +12,7 @@ function Spinner({}: SpinnerProps) {
       aria-live="polite"
       aria-label="Loading..."
       className={styles.wrapper}>
-      <Loader size="48px" />
+      <Loader size={48} />
     </div>
   )
 }
