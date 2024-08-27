@@ -1,6 +1,7 @@
 "use client"
 import React from "react"
 
+import Button from "@/components/Button"
 import Card from "@/components/Card"
 
 export default function Home() {
@@ -12,6 +13,8 @@ export default function Home() {
           more text, that should brake the lines.
         </p>
       </Card>
+      <Button variant="filled">Filled</Button>
+      <Button variant="outline">Outline</Button>
     </main>
   )
 }

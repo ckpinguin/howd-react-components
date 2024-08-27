@@ -1,2 +1,39 @@
 .wrapper {
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 160px;
+  padding: 4px;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid var(--color-olive-9);
+}
+
+.filled {
+  color: var(--color-olive-1);
+  background-color: var(--color-olive-11);
+  box-shadow: var(--shadow-elevation-medium);
+}
+
+.filled:hover,
+.filled:focus {
+  background-color: var(--color-olive-10);
+}
+
+.filled:active {
+  background-color: var(--color-olive-10);
+}
+
+.outline {
+  color: var(--color-olive-11);
+  background-color: var(--color-olive-2);
+  box-shadow: var(--shadow-elevation-low);
+}
+
+.outline:hover,
+.button:focus {
+  background-color: var(--color-olive-3);
+}
+
+.outline:active {
+  background-color: var(--color-olive-3);
 }

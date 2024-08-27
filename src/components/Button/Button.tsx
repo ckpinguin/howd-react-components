@@ -13,8 +13,11 @@ function Button({
   className,
   ...rest
 }: ButtonProps) {
+  //const btnClass = variant
   return (
-    <button className={clsx(className, styles.wrapper)} {...rest}>
+    <button
+      className={clsx(className, styles.wrapper, styles[variant])}
+      {...rest}>
       {children}
     </button>
   )
