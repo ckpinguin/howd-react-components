@@ -1,2 +1,32 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-in-out {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 .wrapper {
+  width: 48px;
+  height: 48px;
+  animation: spin 5s linear infinite;
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    width: 48px;
+    height: 48px;
+    animation: fade-in-out 2s linear infinite;
+  }
 }

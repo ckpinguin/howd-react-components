@@ -1,11 +1,16 @@
-import React from 'react';
+import { Loader } from "lucide-react"
+import React from "react"
 
-import styles from './Spinner.module.css';
+import styles from "./Spinner.module.css"
 
 export interface SpinnerProps {}
 
 function Spinner({}: SpinnerProps) {
-  return <div className={styles.wrapper}></div>;
+  return (
+    <div aria-label="Loading..." className={styles.wrapper}>
+      <Loader size="48px" />
+    </div>
+  )
 }
 
-export default Spinner;
+export default Spinner
