@@ -18,8 +18,10 @@
   }
 }
 
-.wrapper {
-  width: 48px;
-  height: 48px;
-  animation: fade-in-out 2s ease-in-out infinite;
+@media (prefers-reduced-motion) {
+  .wrapper {
+    width: 48px;
+    height: 48px;
+    animation: fade-in-out 2s ease-in-out infinite;
+  }
 }
