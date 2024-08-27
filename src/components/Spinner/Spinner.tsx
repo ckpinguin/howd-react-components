@@ -7,7 +7,11 @@ export interface SpinnerProps {}
 
 function Spinner({}: SpinnerProps) {
   return (
-    <div aria-label="Loading..." className={styles.wrapper}>
+    <div
+      role="status"
+      aria-live="polite"
+      aria-label="Loading..."
+      className={styles.wrapper}>
       <Loader size="48px" />
     </div>
   )
